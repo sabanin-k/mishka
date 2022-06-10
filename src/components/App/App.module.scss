@@ -1,0 +1,17 @@
+@import '../../utils/colors.scss';
+@import '../../utils/mediaQueries.scss';
+
+.container {
+    margin: 0 auto;
+    max-width: 1050px;
+
+    background-color: $bg-white;
+
+    @media (max-width: $tablet) {
+        max-width: 668px;
+    }
+
+    @media (max-width: $mobile) {
+        width: 320px;
+    }
+}

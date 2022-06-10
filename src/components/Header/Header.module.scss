@@ -1,0 +1,51 @@
+@import '../../utils/mediaQueries.scss';
+@import '../../utils/pixelsToRem.scss';
+@import '../../utils/colors.scss';
+
+.header {
+    margin: 0;
+    width: 100vw;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1050px;
+    box-shadow: 0px 1px 0px rgba($color: $font-grey, $alpha: 0.1);
+
+    @media (max-width: $tablet) {
+        max-width: 668px;
+    }
+
+    @media (max-width: $mobile) {
+        width: 320px;
+    }
+}
+
+.navList {
+    margin: 0;
+    height: rem(88);
+    max-width: 400px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.navItem {
+    font-weight: 900;
+    font-size: rem(17);
+    line-height: rem(24);
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+        opacity: 0.6;
+    };
+    &:active {
+        opacity: 0.3;
+    }
+}
+
+.navDesktopItem {
+    font-size: rem(15);
+}
