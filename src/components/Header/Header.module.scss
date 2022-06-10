@@ -1,38 +1,58 @@
-@import '../../utils/mediaQueries.scss';
-@import '../../utils/pixelsToRem.scss';
-@import '../../utils/colors.scss';
-
-.header {
-    margin: 0;
-    width: 100vw;
-}
+@import "../../utils/mediaQueries.scss";
+@import "../../utils/pixelsToRem.scss";
+@import "../../utils/colors.scss";
 
 .container {
+    position: relative;
     margin: 0 auto;
-    max-width: 1050px;
+    padding: 0 rem(50);
+    max-width: 1150px;
     box-shadow: 0px 1px 0px rgba($color: $font-grey, $alpha: 0.1);
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: rem(149);
+    height: rem(72);
+    background-image: url("../../assets/png/mishka-logo-desktop.png");
 
     @media (max-width: $tablet) {
-        max-width: 668px;
+        width: rem(113);
+        height: rem(46);
+        transform: translate(0);
+        background-image: url("../../assets/png/mishka-logo-tablet.png");
     }
 
     @media (max-width: $mobile) {
-        width: 320px;
+        width: rem(85);
+        height: rem(35);
+        background-image: url("../../assets/png/mishka-logo-mobile.png");
     }
 }
 
-.navList {
+.list {
     margin: 0;
+    padding: 0;
     height: rem(88);
-    max-width: 400px;
     list-style: none;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+    gap: rem(70);
 }
 
-.navItem {
-    font-weight: 900;
+.desctopList {
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.link {
+    font-weight: bold;
     font-size: rem(17);
     line-height: rem(24);
     text-decoration: none;
@@ -40,12 +60,12 @@
 
     &:hover {
         opacity: 0.6;
-    };
+    }
     &:active {
         opacity: 0.3;
     }
 }
 
-.navDesktopItem {
-    font-size: rem(15);
+.searchIcon {
+    opacity: 1;
 }
