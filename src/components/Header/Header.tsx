@@ -10,7 +10,7 @@ export const Header: FC = () => {
             <div className={styles.container}>
                 <nav className={styles.nav}>
                     <ul className={`${styles.desctopList} ${styles.list}`}>
-                        <li>
+                        <li className={styles.catalog}>
                             <Link to='/' className={styles.link}>
                                 Каталог товаров
                             </Link>
@@ -20,27 +20,29 @@ export const Header: FC = () => {
                                 Вязание на заказ
                             </Link>
                         </li>
+                    </ul>
+                    <div className={styles.logoContainer}>
+                        <Link to='/' className={styles.link} >
+                            <div className={styles.logo}></div>
+                        </Link>
+                    </div>
+                    <ul className={styles.rightNav}>
                         <li>
-                            <Link to='/' className={styles.link} >
-                                <div className={styles.logo}></div>
+                            <Link to='/' className={styles.link}>
+                                <SearchIcon className={styles.searchIcon} width='18' height='19' />
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to='/' className={styles.link}>
+                                <div className={styles.cart}>
+                                    <CartIcon className={styles.cartIcon} width='22' />
+                                    Корзина: пока пуста
+                                </div>
                             </Link>
                         </li>
                     </ul>
-                    <ul className={styles.list}>
-                        <li>
-                            <Link to='/' className={styles.link}>
-                                <SearchIcon className={styles.searchIcon} />
-                            </Link>
-                        </li>
-                        <li>
-                            <Link to='/' className={styles.link}>
-                                <CartIcon />
-                                Корзина: пока пуста
-                            </Link>
-                        </li>
-                    </ul>
+                    <button className={styles.burgerMenu}></button>
                 </nav>
-
             </div>
         </header>
     )

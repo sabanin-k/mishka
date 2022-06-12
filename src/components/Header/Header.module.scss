@@ -15,6 +15,11 @@
     justify-content: space-between;
 }
 
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     width: rem(149);
     height: rem(72);
@@ -23,7 +28,6 @@
     @media (max-width: $tablet) {
         width: rem(113);
         height: rem(46);
-        transform: translate(0);
         background-image: url("../../assets/png/mishka-logo-tablet.png");
     }
 
@@ -43,11 +47,29 @@
     align-items: center;
     flex-wrap: wrap;
     gap: rem(70);
+
+    @media (max-width: $tablet) {
+        width: 100vw;
+        justify-content: space-between;
+    }
 }
 
 .desctopList {
     @media (max-width: $tablet) {
         display: none;
+    }
+}
+
+.catalog {
+    &::after {
+        content: '';
+        width: rem(1);
+        height: rem(88);
+        margin-left: rem(35);
+        background-color: $font-grey;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
     }
 }
 
@@ -66,6 +88,71 @@
     }
 }
 
+.rightNav {
+    height: rem(88);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: rem(62);
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
 .searchIcon {
-    opacity: 1;
+    opacity: 0.5;
+    vertical-align: middle;
+    &:hover * {
+        fill: $app-green;
+    }
+}
+
+.searchIcon * {
+    fill: $font-grey;
+}
+
+.cartIcon:hover {
+    fill: $app-green;
+}
+
+.cart {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    &::before {
+        content: '';
+        width: rem(1);
+        height: rem(88);
+        background-color: $font-grey;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        right: rem(310);
+    }
+
+    &::after {
+        content: '';
+        width: rem(1);
+        height: rem(88);
+        background-color: $font-grey;
+        opacity: 0.1;
+        position: absolute;
+        top: 0;
+        right: rem(395);
+    }
+}
+
+.burgerMenu {
+    display: none;
+
+    @media (max-width: $mobile) {
+        display: block;
+        height: rem(80);
+        border: none;
+        background-color: #fff;
+    }
 }

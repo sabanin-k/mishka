@@ -1,10 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18" height="18" viewBox="0 0 18 18">
-  <defs>
-    <style>
-      .cls-1 {
-        opacity: 1;
-      }
-    </style>
-  </defs>
-  <image id="search.svg" class="cls-1" width="18" height="18" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABSklEQVQ4jZ2Ub0vDMBDGH1u3+QckpaAgSKQDv/938Z0vwsKGLwYjC8LEwlAu3NUjzaz6QGhI7n65y116hkydtS2AWwBX2dYewNZ5/5b7kAZQZy052gIgFwFXzvvjCMSQJwA1r5PRjr+kOYBW+R0AvGjYOX+tghBgnZ/YWfsKYMkR07gnuyEivpNHgTjvV6NkvmE1Ry7pPzvve5pUfLGSznrkrcRRbtTSnUwqRd/l6ZTEVTvw1qUGiSYhP9lWI5N/SoPmf0AsShHted521k7CuMpiJ74JtFV2Sy5xUdy4D7wnTZtUhxj7xhgyuAAwA3DTGPNB64VIOtW4wXkfZF+eSN5o4BJLdRYn7pDeXIoq0UOMn40xgVO9ZqMZA2joN0h2cqBpjOlDjO+l3widTB07NJu62NS02bNKkY1Av1UOO1mhKVE6lBalB+D4BRvSbtgzWJiAAAAAAElFTkSuQmCC"/>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 23.47 23.46"><defs><style>.a{fill:none;}.b{clip-path:url(#a);}.c{fill:#231f20;}</style><clipPath id="a" transform="translate(0 0)"><rect class="a" width="23.47" height="23.47"/></clipPath></defs><g class="b"><path class="c" d="M2.93,10.26a7.34,7.34,0,1,1,7.33,7.34,7.33,7.33,0,0,1-7.33-7.34M23,21l-4.56-4.55a10.35,10.35,0,1,0-2.06,2L21,23a1.34,1.34,0,0,0,1,.44A1.46,1.46,0,0,0,23.47,22,1.41,1.41,0,0,0,23,21" transform="translate(0 0)"/></g></svg>
