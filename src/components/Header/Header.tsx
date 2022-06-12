@@ -1,23 +1,21 @@
 import { FC } from 'react'
 import { Link } from 'react-router-dom'
 import styles from './Header.module.scss'
-import { ReactComponent as SearchIcon } from '../../assets/svg/search.svg'
-import { ReactComponent as CartIcon } from '../../assets/svg/cart.svg'
 
 export const Header: FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
                 <nav className={styles.nav}>
-                    <ul className={`${styles.desctopList} ${styles.list}`}>
+                    <ul className={styles.leftNav}>
                         <li className={styles.catalog}>
                             <Link to='/' className={styles.link}>
-                                Каталог товаров
+                                <span className={styles.span}>Каталог товаров</span>
                             </Link>
                         </li>
                         <li>
                             <Link to='/' className={styles.link}>
-                                Вязание на заказ
+                                <span className={styles.span}>Вязание на заказ</span>
                             </Link>
                         </li>
                     </ul>
@@ -29,14 +27,15 @@ export const Header: FC = () => {
                     <ul className={styles.rightNav}>
                         <li>
                             <Link to='/' className={styles.link}>
-                                <SearchIcon className={styles.searchIcon} width='18' height='19' />
+                                <div className={styles.searchIcon}></div>
+                                <span className={styles.searchSpan}>Поиск по сайту</span>
                             </Link>
                         </li>
                         <li>
                             <Link to='/' className={styles.link}>
                                 <div className={styles.cart}>
-                                    <CartIcon className={styles.cartIcon} width='22' />
-                                    Корзина: пока пуста
+                                    <div className={styles.cartIcon}></div>
+                                    <span className={styles.cartSpan}>Корзина: пока пуста</span>
                                 </div>
                             </Link>
                         </li>

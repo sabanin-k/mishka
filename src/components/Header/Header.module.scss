@@ -8,16 +8,30 @@
     padding: 0 rem(50);
     max-width: 1150px;
     box-shadow: 0px 1px 0px rgba($color: $font-grey, $alpha: 0.1);
+
+    @media (max-width: $mobile) {
+        padding: 0 rem(30);
+    }
 }
 
 .nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: $mobile) {
+        justify-content: center;
+    }
 }
 
 .logoContainer {
     display: flex;
     align-items: center;
+
+    @media (max-width: $mobile) {
+        margin: 0 auto;
+        height: rem(80);
+    }
 }
 
 .logo {
@@ -38,7 +52,7 @@
     }
 }
 
-.list {
+.leftNav {
     margin: 0;
     padding: 0;
     height: rem(88);
@@ -49,31 +63,51 @@
     gap: rem(70);
 
     @media (max-width: $tablet) {
-        width: 100vw;
-        justify-content: space-between;
+        display: none;
+    }
+
+    @media (max-width: $mobile) {
+        height: rem(80);
+        position: absolute;
+        top: rem(120);
+        margin-left: rem(10);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: nowrap;
     }
 }
 
-.desctopList {
+.withoutTablet {
     @media (max-width: $tablet) {
         display: none;
+    }
+
+    @media (max-width: $mobile) {
     }
 }
 
 .catalog {
     &::after {
-        content: '';
+        content: "";
         width: rem(1);
         height: rem(88);
-        margin-left: rem(35);
+        margin-left: rem(185);
         background-color: $font-grey;
         opacity: 0.1;
         position: absolute;
         top: 0;
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
     }
 }
 
 .link {
+    display: flex;
+    align-items: center;
     font-weight: bold;
     font-size: rem(17);
     line-height: rem(24);
@@ -82,6 +116,10 @@
 
     &:hover {
         opacity: 0.6;
+
+        .cartIcon {
+            background-image: url("../../assets/png/cart-color.png");
+        }
     }
     &:active {
         opacity: 0.3;
@@ -98,33 +136,40 @@
     gap: rem(62);
 
     @media (max-width: $mobile) {
-        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: rem(240);
     }
 }
 
 .searchIcon {
-    opacity: 0.5;
-    vertical-align: middle;
-    &:hover * {
-        fill: $app-green;
+    display: inline-block;
+    width: rem(18);
+    height: rem(18);
+    background-image: url("../../assets/png/search.png");
+
+    &:hover {
+        background-image: url("../../assets/png/search-color.png");
+        transform: translate(0px, 0.5px);
     }
 }
 
-.searchIcon * {
-    fill: $font-grey;
-}
+.searchSpan {
+    display: none;
 
-.cartIcon:hover {
-    fill: $app-green;
+    @media (max-width: $mobile) {
+        display: inline;
+        margin-left: rem(22);
+    }
 }
 
 .cart {
     display: flex;
-    gap: 30px;
     align-items: center;
 
     &::before {
-        content: '';
+        content: "";
         width: rem(1);
         height: rem(88);
         background-color: $font-grey;
@@ -132,10 +177,14 @@
         position: absolute;
         top: 0;
         right: rem(310);
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
     }
 
     &::after {
-        content: '';
+        content: "";
         width: rem(1);
         height: rem(88);
         background-color: $font-grey;
@@ -143,15 +192,35 @@
         position: absolute;
         top: 0;
         right: rem(395);
+
+        @media (max-width: $mobile) {
+            display: none;
+        }
+    }
+}
+
+.cartIcon {
+    width: rem(21);
+    height: rem(18);
+    background-image: url("../../assets/png/cart.png");
+}
+
+.cartSpan {
+    margin-left: rem(30);
+
+    @media (max-width: $mobile) {
+        margin-left: rem(22);
     }
 }
 
 .burgerMenu {
     display: none;
+    width: rem(20);
+    height: rem(14);
+    background-image: url("../../assets/png/menu.png");
 
     @media (max-width: $mobile) {
         display: block;
-        height: rem(80);
         border: none;
         background-color: #fff;
     }
