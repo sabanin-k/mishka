@@ -59,6 +59,14 @@ export const Header: FC = () => {
                         <span>Бесплатная доставка по России</span>
                     </div>
                     <button onClick={handleSetMenuActive} className={isActiveMenu ? styles.burgerMenu : styles.crossMenu}></button>
+                    {!isActiveMenu
+                        && <>
+                            <div className={styles.divider} style={{ top: '160px' }}></div>
+                            <div className={styles.divider} style={{ top: '240px' }}></div>
+                            <div className={styles.divider} style={{ top: '320px' }}></div>
+                            <div className={styles.divider} style={{ top: '400px' }}></div>
+                        </>
+                    }
                 </nav>
             </div>
         </header>

@@ -139,6 +139,7 @@
             background-image: url("../../assets/png/cart-color.png");
         }
     }
+
     &:active {
         opacity: 0.3;
     }
@@ -150,18 +151,6 @@
 
 .span {
     font-size: inherit;
-
-    @media (max-width: $mobile) {
-        &::after {
-            content: "";
-            width: 100px;
-            height: rem(1);
-            position: static;
-            opacity: 0.1;
-            top: rem(80);
-            background-color: $font-grey;
-        }
-    }
 }
 
 .rightNav {
@@ -307,5 +296,20 @@
 
     @media (max-width: $mobile) {
         display: none;
+    }
+}
+
+.divider {
+    position: relative;
+    display: none;
+
+    @media (max-width: $mobile) {
+        display: block;
+        width: 100vw;
+        height: rem(1);
+        position: absolute;
+        right: 0;
+        background-color: $font-grey;
+        opacity: 0.1;    
     }
 }
