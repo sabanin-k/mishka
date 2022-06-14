@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import Header from '../Header';
+import Header from '../Navbar';
 import styles from './App.module.scss'
 
 const App: FC = () => {
