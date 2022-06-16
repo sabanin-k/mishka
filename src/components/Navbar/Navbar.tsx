@@ -17,7 +17,7 @@ export const Navbar: FC = () => {
                             <span className={styles.span}>Каталог товаров</span>
                         </Link>
                     </li>
-                    <li>
+                    <li className={styles.knitting}>
                         <Link to='/' className={styles.link}>
                             <span className={styles.span}>Вязание на заказ</span>
                         </Link>

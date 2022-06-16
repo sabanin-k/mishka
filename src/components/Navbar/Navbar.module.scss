@@ -22,10 +22,14 @@
     margin: 0 auto;
     padding: 0 rem(50);
     max-width: 1150px;
-    box-shadow: 0px 1px 0px rgba($color: $font-grey, $alpha: 0.1);
+    box-shadow: 0px 1px 0px #ececec;
 
     @media (max-width: $mobile) {
         padding: 0 rem(30);
+        position: fixed;
+        width: 100vw;
+        margin: 0 auto;
+        background-color: #fff;
     }
 }
 
@@ -61,6 +65,7 @@
     }
 
     @media (max-width: $mobile) {
+        margin-left: rem(20);
         width: rem(85);
         height: rem(35);
         background-image: url("../../assets/png/mishka-logo-mobile.png");
@@ -88,13 +93,14 @@
     @media (max-width: $mobile) {
         font-size: rem(17);
         position: absolute;
-        top: rem(80);
-        margin-left: rem(10);
+        top: rem(81);
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         flex-wrap: nowrap;
         gap: rem(0);
+        width: 100%;
+        background-color: #fff;
     }
 }
 
@@ -116,6 +122,12 @@
         @media (max-width: $mobile) {
             display: none;
         }
+    }
+}
+
+.knitting {
+    @media (max-width: $mobile) {
+        padding-left: rem(7);
     }
 }
 
@@ -164,11 +176,13 @@
 
     @media (max-width: $mobile) {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
         position: absolute;
         top: rem(240);
         gap: rem(0);
-        margin-right: rem(10);
+        width: 100%;
+        height: rem(160);
+        background-color: #fff;
     }
 }
 
@@ -176,6 +190,10 @@
     margin-right: rem(10);
     display: flex;
     align-items: center;
+
+    @media (max-width: $mobile) {
+        padding-right: rem(53);
+    }
 }
 
 .searchIcon {
@@ -190,13 +208,17 @@
 
     @media (max-width: $mobile) {
         display: inline;
-        margin-left: rem(18);
+        margin-left: rem(25);
     }
 }
 
 .cart {
     display: flex;
     align-items: center;
+
+    @media (max-width: $mobile) {
+        padding-right: rem(23);
+    }
 
     &::before {
         content: "";
@@ -236,10 +258,10 @@
 }
 
 .cartSpan {
-    margin-left: rem(30);
+    margin-left: rem(25);
 
     @media (max-width: $mobile) {
-        margin-left: rem(15);
+        
     }
 }
 
@@ -308,8 +330,6 @@
         width: 100vw;
         height: rem(1);
         position: absolute;
-        right: 0;
-        background-color: $font-grey;
-        opacity: 0.1;    
+        background-color: #ececec;
     }
 }

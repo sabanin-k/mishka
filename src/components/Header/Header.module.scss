@@ -14,6 +14,7 @@
     background-repeat: no-repeat;
 
     @media (max-width: $mobile) {
+        padding-top: rem(160);
         background-image: url('../../assets/jpg/hero-mobile.jpg');
     }
 }
@@ -48,7 +49,7 @@
     }
 
     @media (max-width: $mobile) {
-        margin-top: rem(75);
+        margin-top: rem(0);
         font-size: rem(27);
         line-height: rem(30);
         max-width: rem(300);
