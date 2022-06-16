@@ -6,20 +6,20 @@ export const Categories: FC = () => {
     return (
         <div className={styles.container}>
             <div className={styles.greenContiner}>
-                <div className={styles.interior}>
-                    <Link to='/' className={styles.link}>
+                <Link to='/' className={styles.interior}>
+                    <div>
                         <p className={styles.p}>Предметы</p>
                         <p className={styles.p}>интерьера</p>
-                    </Link>
+                    </div>
                     <div className={styles.interiorImage}></div>
-                </div>
-                <div className={styles.toys}>
-                    <Link to='/' className={styles.link}>
+                </Link>
+                <Link to='/' className={styles.toys}>
+                    <div>
                         <p className={styles.p}>Детские</p>
                         <p className={styles.p}>игрушки</p>
-                    </Link>
+                    </div>
                     <div className={styles.toysImage}></div>
-                </div>
+                </Link>
             </div>
         </div>
     )
