@@ -49,7 +49,7 @@ export const Navbar: FC = () => {
                         <Link to='/' className={styles.link}>
                             <div className={styles.cart}>
                                 <div className={styles.cartIcon}></div>
-                                <span className={`${styles.span} ${styles.cartSpan}`}>Корзина: пока пуста</span>
+                                <span className={`${styles.span} ${styles.cartSpan}`}>Корзина: 1 товар</span>
                             </div>
                         </Link>
                     </li>
