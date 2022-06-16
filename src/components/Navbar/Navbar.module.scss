@@ -30,6 +30,7 @@
         width: 100vw;
         margin: 0 auto;
         background-color: #fff;
+        box-shadow: 0px 2px 0px #ececec;
     }
 }
 
@@ -56,6 +57,7 @@
 .logo {
     width: rem(149);
     height: rem(72);
+    margin-right: rem(50);
     background-image: url("../../assets/png/mishka-logo-desktop.png");
 
     @media (max-width: $tablet) {
@@ -66,6 +68,7 @@
 
     @media (max-width: $mobile) {
         margin-left: rem(20);
+        margin-right: rem(0);
         width: rem(85);
         height: rem(35);
         background-image: url("../../assets/png/mishka-logo-mobile.png");
@@ -192,7 +195,7 @@
     align-items: center;
 
     @media (max-width: $mobile) {
-        padding-right: rem(53);
+        padding-right: rem(57);
     }
 }
 
@@ -209,7 +212,7 @@
 
     @media (max-width: $mobile) {
         display: inline;
-        margin-left: rem(25);
+        margin-left: rem(23);
     }
 }
 
@@ -220,7 +223,9 @@
     align-items: center;
 
     @media (max-width: $mobile) {
+        width: rem(242);
         padding-right: rem(23);
+        justify-content: flex-start;
     }
 
     &::before {
@@ -316,7 +321,7 @@
     color: $font-grey;
     font-size: rem(15);
     position: absolute;
-    top: rem(113);
+    top: rem(114);
     right: rem(50);
 
     @media (max-width: $mobile) {

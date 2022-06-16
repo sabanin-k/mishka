@@ -1,0 +1,133 @@
+@import "../../utils/mediaQueries.scss";
+@import "../../utils/pixelsToRem.scss";
+@import "../../utils/colors.scss";
+
+.container {
+    width: 100vw;
+    background-color: $bg-white;
+}
+
+.greenContiner {
+    margin: 0 auto;
+    margin-top: -20px;
+    max-width: rem(1150);
+    padding: 0 rem(50);
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $tablet) {
+        margin-top: -6px;
+    }
+
+    @media (max-width: $mobile) {
+        width: 100vw;
+        margin-top: -140px;
+        padding: 0 0;
+        flex-direction: column;
+    }
+}
+
+.link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.interior {
+    width: 100%;
+    padding: rem(38) rem(38);
+    background-color: #63d1bb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &:hover {
+        transform: translate(0px, -5px);
+        .interiorImage {
+            opacity: 0.7;
+        }
+    }
+    &:active {
+        .interiorImage {
+            opacity: 0.3;
+        }
+        .p {
+            opacity: 0.3;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: rem(28) rem(28);
+
+        &:hover {
+            transform: translate(0px, 0px);
+            .interiorImage {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.interiorImage {
+    width: rem(40);
+    height: rem(62);
+    background-image: url('../../assets/png/interior.png');
+    opacity: 0.5;
+}
+
+.toys {
+    width: 100%;
+    padding: rem(38) rem(38);
+    background-color: #56c3b2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &:hover {
+        transform: translate(0px, -5px);
+        .toysImage {
+            opacity: 0.7;
+        }
+    }
+    &:active {
+        .toysImage {
+            opacity: 0.3;
+        }
+        .p {
+            opacity: 0.3;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: rem(28) rem(28);
+
+        &:hover {
+            transform: translate(0px, 0px);
+            .interiorImage {
+                opacity: 0.7;
+            }
+        }
+    }
+}
+
+.toysImage {
+    width: rem(60);
+    height: rem(60);
+    background-image: url('../../assets/png/toy.png');
+    opacity: 0.5;
+}
+
+.p {
+    margin: 0;
+    font-size: rem(20);
+    font-weight: bold;
+    line-height: rem(30);
+    color: white;
+
+    &:active {
+        opacity: 0.3;
+    }
+
+    @media (max-width: $mobile) {
+        font-size: rem(19);
+        line-height: rem(24);
+    }
+}

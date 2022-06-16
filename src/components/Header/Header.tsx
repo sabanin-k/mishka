@@ -1,12 +1,22 @@
 import { FC } from 'react'
+import Categories from '../Categories'
+import WaveDivider from '../WaveDivider'
 import styles from './Header.module.scss'
 
 export const Header: FC = () => {
     return (
-        <header className={styles.header}>
-            <div className={styles.container}>
-                <h1 className={styles.h1}>Милые штуки ручной работы для дома</h1>
-            </div>
-        </header>
+        <>
+            <header className={styles.header}>
+                <div className={styles.container}>
+                    <h1 className={styles.h1}>
+                        <span>Милые штуки</span>
+                        <span> ручной </span>
+                        <span>работы для дома</span>
+                    </h1>
+                </div>
+            </header>
+            <Categories />
+            <WaveDivider marginTop={-23} />
+        </>
     )
 }
