@@ -1,0 +1,91 @@
+@import "../../utils/mediaQueries.scss";
+@import "../../utils/pixelsToRem.scss";
+@import "../../utils/colors.scss";
+
+.section {
+    position: relative;
+}
+
+.container {
+    width: 1150px;
+    margin: 0 auto;
+    padding: rem(72) rem(50) 0 rem(225);
+    position: relative;
+    display: flex;
+}
+
+.h2 {
+    margin-left: -5px;
+    font-size: rem(53);
+    line-height: rem(57);
+}
+
+.text {
+    width: rem(290);
+    font-size: rem(17);
+    line-height: rem(30);
+}
+
+.specs {
+    width: rem(292);
+    font-size: rem(15);
+    line-height: rem(20);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.specRow {
+    padding: rem(16) 0;
+    box-shadow: 0px 1px 0px #ececec;
+    display: grid;
+    grid-template-columns: 98px 1fr;
+}
+
+.price {
+    max-width: rem(292);
+    margin-top: rem(66);
+    display: flex;
+    justify-content: center;
+}
+
+.priceText {
+    font-size: rem(20);
+    line-height: rem(24);
+    font-weight: bold;
+}
+
+.button {
+    max-width: rem(292);
+    margin-top: rem(38);
+}
+
+.image {
+    position: absolute;
+    right: rem(50);
+    width: 525px;
+    height: 636px;
+    background-image: url('../../assets/jpg/triple-set-desktop.jpg');
+    z-index: -1;
+}
+
+.zigzig {
+    width: 1050px;
+    height: rem(23);
+    margin: 0 auto;
+    margin-top: rem(73);
+    background-image: url('../../assets/png/zigzag-line-desktop.png');
+}
+
+.week {
+    max-width: 75px;
+    font-size: rem(17);
+    line-height: rem(17);
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: $app-green;
+    position: absolute;
+    top: 116px;
+    left: 480px;
+}

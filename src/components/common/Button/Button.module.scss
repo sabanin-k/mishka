@@ -1,0 +1,30 @@
+@import "../../../utils/mediaQueries.scss";
+@import "../../../utils/pixelsToRem.scss";
+@import "../../../utils/colors.scss";
+
+.button {
+    width: 100%;
+    background-color: #fff;
+    border: 2px solid $font-grey;
+
+    &:hover {
+        background-color: $font-grey;
+        .text {
+            color: #fff;
+        }
+    }
+    &:active {
+        .text {
+            opacity: 0.3;
+        }
+    }
+}
+
+.text {
+    font-family: inherit;
+    color: $font-grey;
+    font-size: rem(17);
+    line-height: rem(20);
+    font-weight: bold;
+    text-transform: uppercase;
+}
