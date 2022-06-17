@@ -4,7 +4,7 @@ import styles from './Categories.module.scss'
 
 export const Categories: FC = () => {
     return (
-        <div className={styles.container}>
+        <section className={styles.container}>
             <div className={styles.greenContiner}>
                 <Link to='/' className={styles.interior}>
                     <div>
@@ -21,6 +21,6 @@ export const Categories: FC = () => {
                     <div className={styles.toysImage}></div>
                 </Link>
             </div>
-        </div>
+        </section>
     )
 }
