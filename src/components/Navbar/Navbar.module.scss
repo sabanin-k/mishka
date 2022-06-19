@@ -23,11 +23,13 @@
     padding: 0 rem(50);
     max-width: 1150px;
     box-shadow: 0px 1px 0px #ececec;
+    z-index: 100;
 
     @media (max-width: $mobile) {
         padding: 0 rem(30);
         position: fixed;
         width: 100vw;
+        min-width: rem(320);
         margin: 0 auto;
         background-color: #fff;
         box-shadow: 0px 2px 0px #ececec;

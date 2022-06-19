@@ -11,8 +11,9 @@ export const WeekProduct: FC = () => {
         <section className={styles.section}>
             <div className={styles.container}>
                 <div className={styles.leftSide}>
-                    <header>
-                        <h2 className={styles.h2}>Вязанные корзинки</h2>
+                    <header className={styles.header}>
+                        <span className={styles.week}>Товар недели</span>
+                        <h2 className={styles.h2}>Вязаные корзинки</h2>
                     </header>
                     <div>
                         <p className={styles.text}>
@@ -46,9 +47,6 @@ export const WeekProduct: FC = () => {
                 </div>
             </div>
             <div className={styles.zigzig}></div>
-            <div className={styles.week}>
-                <p>Товар недели</p>
-            </div>
         </section>
     )
 }
