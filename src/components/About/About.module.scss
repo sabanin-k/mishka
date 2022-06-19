@@ -1,0 +1,116 @@
+@import "../../utils/mediaQueries.scss";
+@import "../../utils/pixelsToRem.scss";
+@import "../../utils/colors.scss";
+
+.section {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: rem(25) rem(225) 0 rem(225);
+}
+
+.h2 {
+    font-size: rem(53);
+    line-height: rem(57);
+    font-weight: bold;
+}
+
+.list {
+    max-height: rem(450);
+    margin-top: rem(80);
+    list-style: none;
+    font-size: rem(20);
+    line-height: rem(22);
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: rem(60);
+
+    &, li {
+        padding: 0;
+    }
+}
+
+.eco {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: rem(33);
+        height: rem(38);
+        background-image: url('../../assets/png/flower.png');
+        position: absolute;
+        top: -50px;
+        left: 8px;
+    }
+}
+
+.scan {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: rem(47);
+        height: rem(27);
+        background-image: url('../../assets/png/money.png');
+        position: absolute;
+        top: -50px;
+        left: 2px;
+    }
+}
+
+.likes {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: rem(34);
+        height: rem(27);
+        background-image: url('../../assets/png/heart.png');
+        position: absolute;
+        top: -50px;
+        left: 8px;
+    }
+}
+
+.handmade {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: rem(35);
+        height: rem(34);
+        background-image: url('../../assets/png/ball.png');
+        position: absolute;
+        top: -50px;
+        left: 8px;
+    }
+}
+
+.local {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: rem(55);
+        height: rem(23);
+        background-image: url('../../assets/png/rocket.png');
+        position: absolute;
+        top: -50px;
+        left: -6px;
+    }
+}
+
+.package {
+    position: relative;
+
+    &::before {
+        content: '';
+        width: rem(33);
+        height: rem(32);
+        background-image: url('../../assets/png/package.png');
+        position: absolute;
+        top: -50px;
+        left: 3px;
+    }
+}
