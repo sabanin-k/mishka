@@ -1,0 +1,85 @@
+@import "../../utils/mediaQueries.scss";
+@import "../../utils/pixelsToRem.scss";
+@import "../../utils/colors.scss";
+
+.container {
+    height: rem(457);
+    position: relative;
+    max-width: rem(1150);
+    margin: 0 auto;
+    padding: rem(25) rem(50) 0 rem(225);
+    background-image: url('../../assets/jpg/review.jpg');
+    background-repeat: no-repeat;
+    background-position: 50px 0;
+
+    @media (max-width: $mobile) {
+        max-width: rem(320);
+        padding: 0 rem(30);
+    }
+}
+
+.textContainer {
+    min-height: rem(275);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.h2 {
+    font-size: rem(53);
+    line-height: rem(57);
+}
+
+.p {
+    max-width: rem(780);
+    font-size: rem(17);
+    line-height: rem(30);
+}
+
+.authorArrows {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    font-size: rem(17);
+    font-weight: bold;
+    margin-bottom: rem(5);
+}
+
+.arrows {
+    margin-top: rem(10);
+    & button {
+        width: rem(130);
+        height: rem(50);
+        background: transparent;
+        color: transparent;
+        border: none;
+        background-image: url('../../assets/png/arrow-right.png');
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &:hover {
+            opacity: 0.7;
+        }
+        &:active {
+            opacity: 0.3;
+        }
+
+        @media (max-width: $mobile) {
+            border: 1px solid #ececec;
+        }
+    }
+}
+
+.leftArrow {
+    transform: rotate(180deg);
+}
+
+.button {
+    width: rem(175);
+    position: absolute;
+    top: 80px;
+    right: 50px;
+}
