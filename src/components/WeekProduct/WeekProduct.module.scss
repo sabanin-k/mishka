@@ -197,8 +197,10 @@
     background-image: url('../../assets/png/zigzag-line-desktop.png');
 
     @media (max-width: $mobile) {
+        width: 100vw;
+        min-width: rem(320);
         height: rem(6);
-        margin-top: rem(20);
+        margin-top: rem(40);
         background-position: center;
         background-size: contain;
     }
