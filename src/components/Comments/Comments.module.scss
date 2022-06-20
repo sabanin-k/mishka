@@ -50,6 +50,12 @@
         line-height: rem(50);
         margin-left: -3px;
     }
+
+    @media (max-width: $mobile) {
+        font-size: rem(25);
+        line-height: rem(30);
+        margin-bottom: rem(40);
+    }
 }
 
 .p {
