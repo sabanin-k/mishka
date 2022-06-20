@@ -8,7 +8,7 @@ export const Comments: FC = () => {
     }
 
     return (
-        <section>
+        <section className={styles.section}>
             <div className={styles.container}>
                 <div className={styles.textContainer}>
                     <header>
@@ -39,6 +39,7 @@ export const Comments: FC = () => {
                     <Button text='Написать' handleClick={handleClick} />
                 </div>
             </div>
+                <div className={styles.zigzig}></div>
         </section>
     )
 }
