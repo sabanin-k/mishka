@@ -1,0 +1,15 @@
+@import "../../utils/mediaQueries.scss";
+@import "../../utils/pixelsToRem.scss";
+
+.map {
+    width: 525px;
+    height: 457px;
+
+    @media (max-width: $tablet) {
+        width: 100vw;
+    }
+
+    @media (max-width: $mobile) {
+        width: 320px;
+    }
+}

@@ -1,9 +1,9 @@
 import { FC, useEffect, useRef, useState } from 'react'
+import styles from './Map.module.scss'
 
 export const Map: FC = () => {
     const ref = useRef<HTMLDivElement>(null);
     const [map, setMap] = useState<google.maps.Map>();
-    const style = { height: '457px', width: '525px'}
 
     useEffect(() => {
         if (ref.current && !map) {
@@ -15,6 +15,6 @@ export const Map: FC = () => {
     }, [ref, map]);
 
     return (
-        <div ref={ref} style={style} />
+        <div ref={ref} className={styles.map} />
     )
 }
