@@ -3,7 +3,7 @@ import styles from './Footer.module.scss'
 
 export const Footer: FC = () => {
     return (
-        <footer>
+        <footer className={styles.footer}>
             <div className={styles.container}>
                 <div className={styles.logo}></div>
                 <ul className={styles.ul}>
@@ -11,7 +11,7 @@ export const Footer: FC = () => {
                     <li className={styles.fb}></li>
                     <li className={styles.twit}></li>
                 </ul>
-                <div>
+                <div className={styles.develop}>
                     <span className={styles.span}>Разработано</span>
                     <div className={styles.academy}></div>
                 </div>
