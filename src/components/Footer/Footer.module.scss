@@ -57,12 +57,13 @@
 
 .ul {
     position: relative;
-    padding-left: 0;
+    padding-left: rem(80);
     list-style: none;
     display: flex;
     gap: rem(40);
 
     @media (max-width: $mobile) {
+        padding-left: rem(0);
         &::after {
             content: '';
             width: 230px;
@@ -128,6 +129,8 @@
     display: flex;
     align-items: center;
     gap: rem(30);
+    color: #000;
+    text-decoration: none;
     cursor: pointer;
 
     &:hover {

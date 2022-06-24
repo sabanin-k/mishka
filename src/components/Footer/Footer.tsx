@@ -11,10 +11,10 @@ export const Footer: FC = () => {
                     <li className={styles.fb}></li>
                     <li className={styles.twit}></li>
                 </ul>
-                <div className={styles.develop}>
+                <a href='https://htmlacademy.ru/' className={styles.develop} target={'_blank'} rel="noreferrer">
                     <span className={styles.span}>Разработано</span>
                     <div className={styles.academy}></div>
-                </div>
+                </a>
             </div>
         </footer>
     )
