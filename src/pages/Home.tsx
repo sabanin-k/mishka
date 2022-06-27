@@ -1,14 +1,14 @@
 import { FC } from 'react'
-import About from '../components/About'
-import Comments from '../components/Comments'
-import Contacts from '../components/Contacts'
-import Header from '../components/HeaderMain'
-import WeekProduct from '../components/WeekProduct'
+import { HeaderMain } from '../components/HeaderMain'
+import { WeekProduct } from '../components/WeekProduct'
+import { About } from '../components/About'
+import { Comments } from '../components/Comments'
+import { Contacts } from '../components/Contacts'
 
 export const Home: FC = () => {
     return (
         <>
-            <Header />
+            <HeaderMain />
             <WeekProduct />
             <About />
             <Comments />

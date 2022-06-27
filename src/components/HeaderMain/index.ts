@@ -1,3 +1,1 @@
-import { HeaderMain } from "./HeaderMain";
-
-export default HeaderMain;
+export * from './HeaderMain'

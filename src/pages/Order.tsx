@@ -1,7 +1,7 @@
 import { FC } from 'react'
 import { Header } from '../components/Header'
+import { WaveDivider } from '../components/WaveDivider'
 import { OrderForm } from '../components/OrderForm'
-import WaveDivider from '../components/WaveDivider'
 
 export const Order: FC = () => {
     return (

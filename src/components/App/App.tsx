@@ -1,11 +1,11 @@
 import { FC } from 'react';
 import { Route, Routes } from 'react-router-dom';
+import { Navbar } from '../Navbar';
 import { Home } from '../../pages/Home';
 import { Order } from '../../pages/Order';
-import Footer from '../Footer';
-import Navbar from '../Navbar';
+import { Footer } from '../Footer';
 
-const App: FC = () => {
+export const App: FC = () => {
     return (
         <>
             <Navbar />
@@ -19,5 +19,3 @@ const App: FC = () => {
         </>
     );
 }
-
-export default App;

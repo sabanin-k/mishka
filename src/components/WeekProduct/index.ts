@@ -1,3 +1,1 @@
-import { WeekProduct } from "./WeekProduct";
-
-export default WeekProduct;
+export * from './WeekProduct'

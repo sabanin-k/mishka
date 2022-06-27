@@ -2,13 +2,13 @@ import { FC } from 'react'
 import { useForm } from 'react-hook-form'
 import { yupResolver } from '@hookform/resolvers/yup'
 import * as yup from 'yup'
-import Button from '../common/Button'
-import styles from './OrderForm.module.scss'
 import { Accessories } from './Fieldsets/Accessories'
 import { Colors } from './Fieldsets/Colors'
 import { Name } from './Fieldsets/Name'
 import { Contacts } from './Fieldsets/Contacts'
 import { Comment } from './Fieldsets/Comment'
+import { Button } from '../common/Button'
+import styles from './OrderForm.module.scss'
 
 export const OrderForm: FC = () => {
     const phoneRegExp = /^((\\+[1-9]{1,4}[ \\-]*)|(\\([0-9]{2,3}\\)[ \\-]*)|([0-9]{2,4})[ \\-]*)*?[0-9]{3,4}?[ \\-]*[0-9]{3,4}?$/
