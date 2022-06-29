@@ -1,9 +1,9 @@
 import { FC } from 'react'
-import { Header } from '../components/Header'
-import { WaveDivider } from '../components/WaveDivider'
+import { Header } from '../components/common/Header'
+import { WaveDivider } from '../components/common/WaveDivider'
 import { OrderForm } from '../components/OrderForm'
 
-export const Order: FC = () => {
+export const OrderPage: FC = () => {
     return (
         <>
             <Header text='Вязание на заказ' />

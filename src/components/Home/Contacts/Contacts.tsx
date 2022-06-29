@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Button } from '../common/Button'
+import { Button } from '../../common/Button'
 import { GMap } from '../GMap'
 import styles from './Contacts.module.scss'
 

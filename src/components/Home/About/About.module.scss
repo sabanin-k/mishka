@@ -1,6 +1,6 @@
-@import "../../utils/mediaQueries.scss";
-@import "../../utils/pixelsToRem.scss";
-@import "../../utils/colors.scss";
+@import "../../../utils/mediaQueries.scss";
+@import "../../../utils/pixelsToRem.scss";
+@import "../../../utils/colors.scss";
 
 .section {
     max-width: 1150px;
@@ -73,7 +73,7 @@
         content: '';
         width: rem(33);
         height: rem(38);
-        background-image: url('../../assets/png/flower.png');
+        background-image: url('../../../assets/png/flower.png');
         position: absolute;
         top: -50px;
         left: 8px;
@@ -87,7 +87,7 @@
         content: '';
         width: rem(47);
         height: rem(27);
-        background-image: url('../../assets/png/money.png');
+        background-image: url('../../../assets/png/money.png');
         position: absolute;
         top: -50px;
         left: 2px;
@@ -101,7 +101,7 @@
         content: '';
         width: rem(34);
         height: rem(27);
-        background-image: url('../../assets/png/heart.png');
+        background-image: url('../../../assets/png/heart.png');
         position: absolute;
         top: -50px;
         left: 8px;
@@ -115,7 +115,7 @@
         content: '';
         width: rem(35);
         height: rem(34);
-        background-image: url('../../assets/png/ball.png');
+        background-image: url('../../../assets/png/ball.png');
         position: absolute;
         top: -50px;
         left: 8px;
@@ -137,7 +137,7 @@
         content: '';
         width: rem(55);
         height: rem(23);
-        background-image: url('../../assets/png/rocket.png');
+        background-image: url('../../../assets/png/rocket.png');
         position: absolute;
         top: -50px;
         left: -6px;
@@ -159,7 +159,7 @@
         content: '';
         width: rem(33);
         height: rem(32);
-        background-image: url('../../assets/png/package.png');
+        background-image: url('../../../assets/png/package.png');
         position: absolute;
         top: -50px;
         left: 3px;

@@ -1,6 +1,6 @@
-@import "../../utils/mediaQueries.scss";
-@import "../../utils/pixelsToRem.scss";
-@import "../../utils/colors.scss";
+@import "../../../utils/mediaQueries.scss";
+@import "../../../utils/pixelsToRem.scss";
+@import "../../../utils/colors.scss";
 
 .visuallyHidden {
     @media (max-width: $mobile) {
@@ -60,12 +60,12 @@
     width: rem(149);
     height: rem(72);
     margin-right: rem(50);
-    background-image: url("../../assets/png/mishka-logo-desktop.png");
+    background-image: url("../../../assets/png/mishka-logo-desktop.png");
 
     @media (max-width: $tablet) {
         width: rem(113);
         height: rem(46);
-        background-image: url("../../assets/png/mishka-logo-tablet.png");
+        background-image: url("../../../assets/png/mishka-logo-tablet.png");
     }
 
     @media (max-width: $mobile) {
@@ -73,7 +73,7 @@
         margin-right: rem(0);
         width: rem(85);
         height: rem(35);
-        background-image: url("../../assets/png/mishka-logo-mobile.png");
+        background-image: url("../../../assets/png/mishka-logo-mobile.png");
     }
 }
 
@@ -149,12 +149,12 @@
         opacity: 0.6;
 
         .searchIcon {
-            background-image: url("../../assets/png/search-color.png");
+            background-image: url("../../../assets/png/search-color.png");
             transform: translate(0px, 0.5px);
         }
 
         .cartIcon {
-            background-image: url("../../assets/png/cart-color.png");
+            background-image: url("../../../assets/png/cart-color.png");
         }
     }
 
@@ -208,7 +208,7 @@
     display: inline-block;
     width: rem(18);
     height: rem(18);
-    background-image: url("../../assets/png/search.png");
+    background-image: url("../../../assets/png/search.png");
 }
 
 .searchSpan {
@@ -266,7 +266,7 @@
 .cartIcon {
     width: rem(21);
     height: rem(18);
-    background-image: url("../../assets/png/cart.png");
+    background-image: url("../../../assets/png/cart.png");
 }
 
 .cartSpan {
@@ -281,7 +281,7 @@
     display: none;
     width: rem(20);
     height: rem(14);
-    background-image: url("../../assets/png/menu.png");
+    background-image: url("../../../assets/png/menu.png");
 
     @media (max-width: $mobile) {
         display: block;
@@ -294,7 +294,7 @@
     display: none;
     width: rem(20);
     height: rem(20);
-    background-image: url("../../assets/png/menu-close.png");
+    background-image: url("../../../assets/png/menu-close.png");
 
     @media (max-width: $mobile) {
         display: block;

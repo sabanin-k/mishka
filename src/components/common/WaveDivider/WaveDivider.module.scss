@@ -1,11 +1,11 @@
-@import "../../utils/mediaQueries.scss";
-@import "../../utils/pixelsToRem.scss";
+@import "../../../utils/mediaQueries.scss";
+@import "../../../utils/pixelsToRem.scss";
 
 .divider {
     position: relative;
     width: 100vw;
     height: rem(24);
-    background-image: url('../../assets/png/zigzag-fill-desktop.png');
+    background-image: url('../../../assets/png/zigzag-fill-desktop.png');
     z-index: 100;
 
     @media (max-width: $mobile) {

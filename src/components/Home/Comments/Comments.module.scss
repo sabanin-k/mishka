@@ -1,6 +1,6 @@
-@import "../../utils/mediaQueries.scss";
-@import "../../utils/pixelsToRem.scss";
-@import "../../utils/colors.scss";
+@import "../../../utils/mediaQueries.scss";
+@import "../../../utils/pixelsToRem.scss";
+@import "../../../utils/colors.scss";
 
 .section {
     margin-top: rem(80);
@@ -12,7 +12,7 @@
     max-width: rem(1150);
     margin: 0 auto;
     padding: rem(25) rem(50) 0 rem(225);
-    background-image: url('../../assets/jpg/review.jpg');
+    background-image: url('../../../assets/jpg/review.jpg');
     background-repeat: no-repeat;
     background-position: 50px 0;
 
@@ -95,7 +95,7 @@
         background: transparent;
         color: transparent;
         border: none;
-        background-image: url('../../assets/png/arrow-right.png');
+        background-image: url('../../../assets/png/arrow-right.png');
         background-position: center;
         background-repeat: no-repeat;
 
@@ -135,7 +135,7 @@
     height: rem(23);
     margin: 0 auto;
     margin-top: rem(73);
-    background-image: url('../../assets/png/zigzag-line-desktop.png');
+    background-image: url('../../../assets/png/zigzag-line-desktop.png');
 
     @media (max-width: $tablet) {
         width: 100vw;

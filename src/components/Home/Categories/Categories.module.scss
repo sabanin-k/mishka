@@ -1,6 +1,6 @@
-@import "../../utils/mediaQueries.scss";
-@import "../../utils/pixelsToRem.scss";
-@import "../../utils/colors.scss";
+@import "../../../utils/mediaQueries.scss";
+@import "../../../utils/pixelsToRem.scss";
+@import "../../../utils/colors.scss";
 
 .container {
     min-width: rem(320);
@@ -76,7 +76,7 @@
 .interiorImage {
     width: rem(40);
     height: rem(62);
-    background-image: url('../../assets/png/interior.png');
+    background-image: url('../../../assets/png/interior.png');
     opacity: 0.5;
 
     @media (max-width: $mobile) {
@@ -132,7 +132,7 @@
 .toysImage {
     width: rem(60);
     height: rem(60);
-    background-image: url('../../assets/png/toy.png');
+    background-image: url('../../../assets/png/toy.png');
     opacity: 0.5;
 
     @media (max-width: $mobile) {

@@ -1,6 +1,6 @@
-@import "../../utils/mediaQueries.scss";
-@import "../../utils/pixelsToRem.scss";
-@import "../../utils/colors.scss";
+@import "../../../utils/mediaQueries.scss";
+@import "../../../utils/pixelsToRem.scss";
+@import "../../../utils/colors.scss";
 
 .header {
     position: relative;
@@ -8,7 +8,7 @@
     z-index: -1;
     display: flex;
     justify-content: center;
-    background-image: url('../../assets/jpg/hero-desktop.jpg');
+    background-image: url('../../../assets/jpg/hero-desktop.jpg');
     background-color: $bg-white;
     background-position: top;
     background-repeat: no-repeat;
@@ -16,7 +16,7 @@
     @media (max-width: $mobile) {
         min-width: rem(320);
         padding-top: rem(160);
-        background-image: url('../../assets/jpg/hero-mobile.jpg');
+        background-image: url('../../../assets/jpg/hero-mobile.jpg');
         background-position: center;
     }
 }

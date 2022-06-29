@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { Button } from '../common/Button';
+import { Button } from '../../common/Button';
 import styles from './WeekProduct.module.scss'
 
 export const WeekProduct: FC = () => {

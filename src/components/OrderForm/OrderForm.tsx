@@ -17,7 +17,10 @@ export const OrderForm: FC = () => {
         lastName: yup.string().required('Обязательное поле'),
         tel: yup.string().matches(phoneRegExp, 'Неправильный номер').required('Обязательное поле')
     }).required()
-    const { register, handleSubmit, formState: { errors } } = useForm({
+    const { 
+        // register,
+        handleSubmit,
+        formState: { errors } } = useForm({
         resolver: yupResolver(schema)
     });
     const onSubmit = (data: any) => console.log(data);

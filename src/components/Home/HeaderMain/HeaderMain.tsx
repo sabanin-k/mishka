@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { Categories } from '../Categories'
-import { WaveDivider } from '../WaveDivider'
+import { WaveDivider } from '../../common/WaveDivider'
 import styles from './HeaderMain.module.scss'
 
 export const HeaderMain: FC = () => {

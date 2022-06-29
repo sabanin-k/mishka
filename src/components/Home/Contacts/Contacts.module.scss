@@ -1,6 +1,6 @@
-@import "../../utils/mediaQueries.scss";
-@import "../../utils/pixelsToRem.scss";
-@import "../../utils/colors.scss";
+@import "../../../utils/mediaQueries.scss";
+@import "../../../utils/pixelsToRem.scss";
+@import "../../../utils/colors.scss";
 
 .container {
     position: relative;
@@ -58,7 +58,7 @@
     height: rem(81);
     margin-top: rem(45);
     margin-left: -100px;
-    background-image: url('../../assets/png/flag.png');
+    background-image: url('../../../assets/png/flag.png');
     order: 0;
 
     @media (max-width: $tablet) {
