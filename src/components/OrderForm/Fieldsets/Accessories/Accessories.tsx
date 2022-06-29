@@ -13,7 +13,7 @@ export const Accessories: FC = () => {
                     <div className={styles.radioButton}>
                         <label className={styles.label}>
                             <input className={`${styles.inputRadio} ${styles.visuallyHidden}`}
-                                type="radio" name="type" checked />
+                                type="radio" name="type" />
                             <span className={styles.radio} />
                             <span className={styles.labelText}>Аксессуар для интерьера</span>
                         </label>

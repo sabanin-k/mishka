@@ -13,7 +13,7 @@ export const Navbar: FC = () => {
             <div className={styles.container}>
                 <ul className={`${styles.leftNav} ${isActiveMenu && styles.visuallyHidden}`}>
                     <li className={styles.catalog}>
-                        <Link to='/' className={styles.link}>
+                        <Link to='/catalog' className={styles.link}>
                             <span className={styles.span}>Каталог товаров</span>
                         </Link>
                     </li>
