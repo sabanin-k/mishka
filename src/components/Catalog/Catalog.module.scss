@@ -1,3 +1,31 @@
 @import "../../utils/mediaQueries.scss";
 @import "../../utils/pixelsToRem.scss";
 @import "../../utils/colors.scss";
+
+.container {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: rem(115) rem(50) rem(100) rem(50);
+
+    @media (max-width: $tablet) {
+        padding: rem(65) rem(50) rem(60) rem(50);
+    }
+
+    @media (max-width: $mobile) {
+        padding: rem(30) rem(30) rem(30) rem(30);
+    }
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: rem(30);
+
+    @media (max-width: $tablet) {
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        row-gap: rem(55);
+    }
+}
