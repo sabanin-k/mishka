@@ -44,6 +44,9 @@ export const Catalog: FC = () => {
                         price={1500}
                     />
                 </div>
+                <div>
+                    
+                </div>
             </div>
         </section>
     )
