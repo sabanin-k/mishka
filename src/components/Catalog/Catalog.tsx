@@ -17,58 +17,58 @@ export const Catalog: FC = () => {
     const { isDesktop, isTablet, isMobile } = useMatchMedia()
 
     const handleClick = () => {
-        console.log('Сделать заказ');        
+        console.log('Сделать заказ');
     }
 
     return (
-        <section>
-            <div className={styles.container}>
-                <div className={styles.cards}>
-                    <ProductCard
-                        img={`${(isDesktop && desktopImage1)
-                            || (isTablet && tabletImage1)
-                            || (isMobile && mobileImage1)}`}
-                        name='Зайчик-попрыгайчик'
-                        description='Рост 30 см, вес 200 г'
-                        price={1200}
-                    />
-                    <ProductCard
-                        img={`${(isDesktop && desktopImage2)
-                            || (isTablet && tabletImage2)
-                            || (isMobile && mobileImage2)}`}
-                        name='Корзинка для белья'
-                        description='Диаметр 15 см, высота 10 см'
-                        price={690}
-                    />
-                    <ProductCard
-                        img={`${(isDesktop && desktopImage3)
-                            || (isTablet && tabletImage3)
-                            || (isMobile && mobileImage3)}`}
-                        name='Большая корзинка для игрушек'
-                        description='Диаметр 30 см, высота 30 см'
-                        price={1500}
-                    />
+        <div className={styles.container}>
+            <section className={styles.cards}>
+                <ProductCard
+                    img={`${(isDesktop && desktopImage1)
+                        || (isTablet && tabletImage1)
+                        || (isMobile && mobileImage1)}`}
+                    name='Зайчик-попрыгайчик'
+                    description='Рост 30 см, вес 200 г'
+                    price={1200}
+                />
+                <ProductCard
+                    img={`${(isDesktop && desktopImage2)
+                        || (isTablet && tabletImage2)
+                        || (isMobile && mobileImage2)}`}
+                    name='Корзинка для белья'
+                    description='Диаметр 15 см, высота 10 см'
+                    price={690}
+                />
+                <ProductCard
+                    img={`${(isDesktop && desktopImage3)
+                        || (isTablet && tabletImage3)
+                        || (isMobile && mobileImage3)}`}
+                    name='Большая корзинка для игрушек'
+                    description='Диаметр 30 см, высота 30 см'
+                    price={1500}
+                />
+            </section>
+            <section className={styles.videoWrapper}>
+                <div className={styles.videoImg}>
+                    <button className={styles.play} />
                 </div>
-                <div className={styles.videoWrapper}>
-                    <div className={styles.videoImg}></div>
-                    <div className={styles.videoDesc}>
-                        <div>
-                            <div className={styles.cameraIcon} />
-                            <h3 className={styles.h3}>Процесс производства</h3>
-                        </div>
-                        <div>
-                            <p>
-                                По просьбам наших любимых фолловеров
-                                мы сняли для вас подробное видео о том,
-                                как появляются наши товары.
-                            </p>
-                        </div>
+                <div className={styles.videoDesc}>
+                    <div className={styles.h3Wrapper}>
+                        <div className={styles.cameraIcon} />
+                        <h3 className={styles.h3}>Процесс производства</h3>
+                    </div>
+                    <div className={styles.descWrapper}>
+                        <p className={styles.p}>
+                            По просьбам наших любимых фолловеров
+                            мы сняли для вас подробное видео о том,
+                            как появляются наши товары.
+                        </p>
                         <div className={styles.button}>
                             <Button text='Сделать заказ' handleClick={handleClick} />
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
     )
 }
