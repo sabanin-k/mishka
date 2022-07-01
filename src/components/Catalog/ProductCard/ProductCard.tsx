@@ -15,7 +15,7 @@ export const ProductCard: FC<Props> = ({ img, name, description, price }) => {
                 className={styles.img} />
             <div className={styles.container}>
                 <div className={styles.wrapper}>
-                    <p className={styles.name}>{name}</p>
+                    <h3 className={styles.name}>{name}</h3>
                     <p className={styles.description}>{description}</p>
                 </div>
                 <div>
