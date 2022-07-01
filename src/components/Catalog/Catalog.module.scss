@@ -29,3 +29,36 @@
         row-gap: rem(55);
     }
 }
+
+.videoWrapper {
+    margin-top: rem(55);
+    max-width: fit-content;
+    border: 1px solid #ececec;
+
+    @media (max-width: $mobile) {
+        margin-top: rem(30);
+    }
+}
+
+.videoImg {
+    width: 682px;
+    height: 455px;
+    background-image: url('../../assets/jpg/video-desktop.jpg');
+
+    @media (max-width: $tablet) {
+        width: 668px;
+        background-image: url('../../assets/jpg/video-tablet.jpg');
+    }
+
+    @media (max-width: $mobile) {
+        width: 260px;
+        height: 150px;
+        background-image: url('../../assets/jpg/video-mobile.jpg');
+    }
+}
+
+.cameraIcon {
+    width: 32px;
+    height: 22px;
+    background-image: url('../../assets/png/video.png');
+}
