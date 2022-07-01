@@ -7,7 +7,7 @@
 }
 
 .container {
-    height: rem(457);
+    min-height: rem(457);
     position: relative;
     max-width: rem(1150);
     margin: 0 auto;
@@ -23,7 +23,7 @@
 
     @media (max-width: $mobile) {
         min-width: rem(320);
-        max-width: rem(320);
+        max-width: 100%;
         margin-top: rem(60);
         padding: 0 rem(30);
         background-image: none;
@@ -89,6 +89,9 @@
 .arrows {
     margin-top: rem(10);
 
+    display: flex;
+    justify-content: center;
+
     & button {
         width: rem(130);
         height: rem(50);
@@ -107,6 +110,7 @@
         }
 
         @media (max-width: $mobile) {
+            width: 100%;
             border: 1px solid #ececec;
         }
     }
@@ -123,7 +127,7 @@
     right: 50px;
 
     @media (max-width: $mobile) {
-        width: rem(260);
+        width: 100%;
         position: relative;
         top: 40px;
         right: 0;
@@ -144,7 +148,6 @@
     @media (max-width: $mobile) {
         min-width: rem(320);
         height: rem(6);
-        margin-top: rem(240);
         background-position: center;
         background-size: contain;
     }

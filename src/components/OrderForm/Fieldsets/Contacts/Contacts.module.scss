@@ -42,7 +42,7 @@ input {
     }
 
     @media (max-width: $mobile) {
-        max-width: rem(320);
+        max-width: 100%;
         padding: 0 rem(30);
     }
 }
@@ -117,14 +117,22 @@ input {
     grid-template-columns: fit-content(55px) 1fr;
     align-items: center;
     gap: 24px;
+    
+    &, .inputTel {
+        gap: 0px;
+    }
+    
 
     @media (max-width: $mobile) {
         gap: 22px;
+
+        &, .inputTel {
+            gap: 0px;
+        }
     }
 }
 
 .inputTel {
-    margin-left: -22px;
     padding: 0 rem(20);
     border: none;
     outline: none;
@@ -141,8 +149,9 @@ input {
     }
 
     @media (max-width: $mobile) {
-        padding: 0 rem(0);
-        width: 270px;
+        margin-left: 0;
+        padding: 0;
+        width: 100%;
         background-color: #fff;
     }
 }

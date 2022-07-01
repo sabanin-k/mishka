@@ -53,7 +53,7 @@ input {
     }
 
     @media (max-width: $mobile) {
-        max-width: rem(320);
+        max-width: 100%;
         padding: 0 rem(30);
     }
 }
